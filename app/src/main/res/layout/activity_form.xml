@@ -1,123 +1,126 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Form"
-    android:id="@+id/activity_form">
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/activity_form"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:paddingLeft="@dimen/activity_horizontal_margin"
+  android:paddingTop="@dimen/activity_vertical_margin"
+  android:paddingRight="@dimen/activity_horizontal_margin"
+  android:paddingBottom="@dimen/activity_vertical_margin"
+  tools:context=".Form">
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Número de Tarjeta:"
-        android:id="@+id/textView"
-        android:layout_alignBottom="@+id/numberText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+  <TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/numberText"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true"
+    android:text="Número de Tarjeta:" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/numberText"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/textView"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:text="371449635398431" />
+  <EditText
+    android:id="@+id/numberText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_toRightOf="@+id/textView"
+    android:text="371449635398431" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Expira:"
-        android:id="@+id/textView2"
-        android:layout_alignBottom="@+id/monthText"
-        android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView" />
+  <TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignEnd="@+id/textView"
+    android:layout_alignRight="@+id/textView"
+    android:layout_alignBottom="@+id/monthText"
+    android:text="Expira:" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/monthText"
-        android:layout_below="@+id/numberText"
-        android:layout_alignLeft="@+id/numberText"
-        android:layout_alignStart="@+id/numberText"
-        android:text="01" />
+  <EditText
+    android:id="@+id/monthText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/numberText"
+    android:layout_alignStart="@+id/numberText"
+    android:layout_alignLeft="@+id/numberText"
+    android:text="01" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/yearText"
-        android:layout_alignBottom="@+id/monthText"
-        android:layout_toRightOf="@+id/monthText"
-        android:layout_toEndOf="@+id/monthText"
-        android:text="2016" />
+  <EditText
+    android:id="@+id/yearText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/monthText"
+    android:layout_toEndOf="@+id/monthText"
+    android:layout_toRightOf="@+id/monthText"
+    android:text="2016" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Código de seguridad:"
-        android:id="@+id/textView3"
-        android:layout_marginTop="27dp"
-        android:layout_below="@+id/monthText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+  <TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/monthText"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true"
+    android:layout_marginTop="27dp"
+    android:text="Código de seguridad:" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/cvcText"
-        android:text="123"
-        android:layout_alignBottom="@+id/textView3"
-        android:layout_toRightOf="@+id/textView3"
-        android:layout_toEndOf="@+id/textView3" />
+  <EditText
+    android:id="@+id/cvcText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/textView3"
+    android:layout_toEndOf="@+id/textView3"
+    android:layout_toRightOf="@+id/textView3"
+    android:text="123" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tokenize!"
-        android:id="@+id/btnTokenize"
-        android:layout_marginBottom="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+  <Button
+    android:id="@+id/btnTokenize"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="50dp"
+    android:text="Tokenize!" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nombre que aparece en la tarjeta:"
-        android:id="@+id/textView4"
-        android:layout_below="@+id/cvcText"
-        android:layout_toLeftOf="@+id/monthText"
-        android:layout_toStartOf="@+id/monthText"
-        android:layout_marginTop="33dp" />
+  <TextView
+    android:id="@+id/textView4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/cvcText"
+    android:layout_marginTop="33dp"
+    android:layout_toStartOf="@+id/monthText"
+    android:layout_toLeftOf="@+id/monthText"
+    android:text="Nombre que aparece en la tarjeta:" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/nameText"
-        android:layout_alignBottom="@+id/textView4"
-        android:layout_alignLeft="@+id/cvcText"
-        android:layout_alignStart="@+id/cvcText"
-        android:text="Mario Moreno Reyes" />
+  <EditText
+    android:id="@+id/nameText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignStart="@+id/cvcText"
+    android:layout_alignLeft="@+id/cvcText"
+    android:layout_alignBottom="@+id/textView4"
+    android:text="Mario Moreno Reyes" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="OUTPUT"
-        android:id="@+id/outputView"
-        android:layout_below="@+id/nameText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="85dp" />
+  <TextView
+    android:id="@+id/outputView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/nameText"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="85dp"
+    android:text="OUTPUT"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="OUTPUT"
-        android:id="@+id/uuidDevice"
-        android:layout_below="@+id/outputView"
-        android:layout_alignLeft="@+id/nameText"
-        android:layout_alignStart="@+id/nameText" />
+  <TextView
+    android:id="@+id/uuidDevice"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/outputView"
+    android:layout_alignStart="@+id/nameText"
+    android:layout_alignLeft="@+id/nameText"
+    android:text="OUTPUT"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>

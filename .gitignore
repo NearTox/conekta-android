@@ -5,3 +5,13 @@
 .DS_Store
 /build
 maven_push.gradle
+
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/modules.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+/captures
+.externalNativeBuild
